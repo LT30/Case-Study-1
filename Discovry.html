@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+        .container{
+            width: 100%;
+        }
+        .block{
+            width: 24%;
+            height: 300px;
+            /* background: red; */
+            float: left;
+            margin: 2px;
+            border: solid 1px blue;
+        }
+        .block-1{
+            width: 98%;
+            height: 80%;
+            margin: 1%;
+        }
+
+        .block-1 img{
+            width: 98%;
+            height: 80%;
+            margin: 1%;
+        }
+        .text-block{
+            height: 15%;
+            background: white;
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            font-style: bold;
+        }
+
+
+        .para{
+            display: inline-block;
+        }
+        @media only screen and (max-width: 1000px) {
+            .block{
+                width: 32%;
+            }
+        }
+        @media only screen and (max-width: 750px) {
+            .block{
+                width: 48%;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .block{
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Banner -->
+<section id="banner">
+        
+    <!-- Nav -->
+            <!-- Logo -->
+        <div>
+            <div class="logo col-3">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- Menu -->
+            <div id="menu" class="col-8">
+                <ul>
+                    <li><a href="index.html">Home</a>
+
+                    </li>
+                    <li><a href="#features">Eat Out </a>
+                        <ul>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Bar</a></li>
+                        <li><a href="#">Pub</a></li>
+                        <li><a href="#">Others</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#service">Food Tour </a>
+                        <ul>
+                        <li><a href="#">Traditional Food</a></li>
+                        <li><a href="#">Korean Food</a></li>
+                        <li><a href="#">Chinese Food</a></li>
+                        <li><a href="#">Janpanese Food</a></li>
+                        <li><a href="#">West Food</a></li>
+                        <li><a href="#">Others</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Order.html">Order </a>
+                    </li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>   
+        <!-- end Nav -->
+    
+    <div class="banner-text">
+            <h1> <b style="color: red;">Tasty </b> Food</h1>
+        <p> Explore Food World</p>
+    </div>
+</section>
+<!-- End Banner --> 
+<div class="container">
+    <div class="block">
+        <div class="block-1"> <img src="images/Bundau.jpg" alt=""></div>
+        <div class="text-block"><b>Lâm Anh - Bun Dau</b> <br> <i>170 Le Van Khuong</i></p></div>
+    </div>
+    <div class="block">
+        <div class="block-1"><img src="images/lau.jpg" alt=""></div>
+        <div class="text-block"><b>Lau Duc Troc - Le Duc Tho</b> <br> <i>170 Le Van Khuong</i></div>
+    </div>
+    <div class="block">
+        <div class="block-1"><img src="images/Con Chay.jpg" alt=""></div>
+        <div class="text-block"><b>Com chay Tue Tam</b><br> <i>170 Le Van Khuong</i></div>
+    </div>
+    <div class="block">
+        <div class="block-1"><img src="images/Teen Food.jpg" alt=""></div>
+        <div class="text-block"><b>Teenage Food</b><br> <i>170 Le Van Khuong</i></div>
+    </div>
+</div>
+<div class="para">
+    <p>
+        This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).
+    </p>
+</div>
+</body>
+</html>
